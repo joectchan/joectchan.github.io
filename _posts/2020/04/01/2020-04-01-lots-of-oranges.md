@@ -7,6 +7,17 @@ tags:
   - life
 ---
 
+gallery:
+  - url: /_posts/2020/04/01/images/oranges.jpg
+    image_path: /_posts/2020/04/01/images/oranges.jpg
+    alt: "oranges.jpg"
+    title: "oranges"
+  - url: /_posts/2020/04/01/images/oranges.png
+    image_path: /_posts/2020/04/01/images/oranges.png
+    alt: "oranges.png"
+    title: "oranges.png"
+    
+    
 I had caught some kind of cold/flu in Dec, Jan and Feb. Being sicked three times in three consecutive months!
 
 ![alt]({{ site.url }}{{ site.baseurl }}/_posts/2020/04/01/images/oranges.jpg)
