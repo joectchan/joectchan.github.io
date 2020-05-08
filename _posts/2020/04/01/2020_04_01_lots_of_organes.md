@@ -9,7 +9,7 @@ tags:
 
 I had caught some kind of cold/flu in Dec, Jan and Feb. Being sicked three times in three consecutive months!
 
-![alt](images/oranges.jpg)
+![alt](images/oranges.png)
 {: .full}
 
 I am committed to stay healthy during this lock down time. I will take lots of vitamin C in by eating a bag of oranges every week. 
