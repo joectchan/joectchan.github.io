@@ -14,6 +14,10 @@ gallery:
     image_path: /_posts/2020/04/01/images/oranges.png
     alt: "oranges.png"
     title: "oranges.png"
+  - url: /assets/images/oranges.png
+    image_path: /assets/images/images/oranges.png
+    alt: "oranges.png"
+    title: "oranges.png"    
 ---
     
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
