@@ -2,12 +2,14 @@
 title: "Eating lots of oranges to stay healthy"
 excerpt_separator: "<!--more-->"
 categories:
-  - Blog
+  - blog
 tags:
   - life
 ---
 
 I had caught some kind of cold/flu in Dec, Jan and Feb. Being sicked three times in three consecutive months!
+
+![alt](images/oranges.jpg)
 
 ![alt](images/oranges.png)
 
