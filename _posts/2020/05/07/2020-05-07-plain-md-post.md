@@ -1,5 +1,5 @@
 ---
-title: "Post: Quote"
+title: "Plain text quote"
 categories:
   - blog
 tags:
