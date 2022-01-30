@@ -32,11 +32,11 @@ Try the [code](https://godbolt.org/z/EjYs5391x) on Compiler Explorer.
 
 I put file name line number in my debug messages. Our build system passes the full pathname of the file to gcc. `__FILE__` becomes a long string. I used to trim the file name at runtime before I print the log message.
 
-Recently, I found this [post](https://stackoverflow.com/questions/8487986/file-macro-shows-full-path). Andry's answer on Jan 23 '19 at 21:05 shows  template meta programming can find the final '/' or '\' char in a string at compile-time. i.e. a "constexpr strrchr()"
+Recently, I found this [post](https://stackoverflow.com/questions/8487986/file-macro-shows-full-path). Andry's answer (on Jan 23 '19 at 21:05) shows that template meta programming can find the final '/' or '\' char in a string at compile-time. i.e. a constexpr strrchr() function.
 
 You can try [Andry's answer](https://godbolt.org/z/u6s8j3) on Compiler Explorer.
 
-Based on this template meta programming technique, I wrote another constexpr function that looks for "::" from the right, starting AFTER the right '('. That allows me to print the class and function name, trimming the namespaces on the left and the input arguments on the right.
+Based on this technique, I wrote another constexpr function that looks for "::" from the right. Furthermore, it starts the search AFTER seeing the right '('. The end result of this would print the class and function name, trimming the namespaces on the left and the input arguments on the right.
 
 ```
 template <typename T, size_t S>
