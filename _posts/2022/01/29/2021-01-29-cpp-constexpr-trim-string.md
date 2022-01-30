@@ -86,7 +86,7 @@ inline constexpr size_t get_class_func_offset(bool seen_open_bracket, unsigned i
 #define CPP_FILE (fmt::string_view((__FILE__ + get_file_name_offset(__FILE__))))
 
 // Construct a string_view at an offset that begins after the third ':', and end the string_view before the final '('
-#define NUM_OF_COLON_TO_SKIP (4)
+#define NUM_OF_COLON_TO_SKIP (2)
 #define CPP_FUNC (fmt::string_view(__PRETTY_FUNCTION__ + get_class_func_offset(false, NUM_OF_COLON_TO_SKIP, __PRETTY_FUNCTION__), get_open_bracket_offset(__PRETTY_FUNCTION__) - get_class_func_offset(false, NUM_OF_COLON_TO_SKIP, __PRETTY_FUNCTION__)))
 
 #define DBG_PREFIX                                                            \
@@ -103,6 +103,8 @@ inline std::string dbg_prefix(
 }
 ```
 I end up standardizing my debug log to always include file name, line, class name and function name in all my debug messages.
+
+You can try [my code](https://godbolt.org/z/dP1jzaf7T) on Compiler Explorer.
 
 When I was researching the above, I came across [this](https://davidgorski.ca/posts/truncate-string-whitespace-compiletime-cpp/) which shows how to trim whitespaces at compile-time. I am not using this technique, but may be I will need it in the future.
 
