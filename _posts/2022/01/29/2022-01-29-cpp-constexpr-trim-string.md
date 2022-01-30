@@ -102,9 +102,11 @@ inline std::string dbg_prefix(
     return fmt::format("{}:{} {} ", file, line, func);
 }
 ```
-I end up standardizing my debug log to always include file name, line, class name and function name in all my debug messages.
+I plan to standardize my debug log to always include file name, line, class name and function name in all my debug messages.
 
 You can try [my code](https://godbolt.org/z/dP1jzaf7T) on Compiler Explorer.
 
-When I was researching the above, I came across [this](https://davidgorski.ca/posts/truncate-string-whitespace-compiletime-cpp/) which shows how to trim whitespaces at compile-time. I am not using this technique, but may be I will need it in the future.
+I experimented with C++17 string_view. I hoped it can avoid messy template meta programming. I tested on Compiler Explorer but the function that extracts class name and function name ended up as a regular function, not an inline constexpr function. Here is the failed [code](https://godbolt.org/z/597637f6Y)
+
+By the way, I came across [this](https://davidgorski.ca/posts/truncate-string-whitespace-compiletime-cpp/) which showed how to trim whitespaces at compile-time. I did not use this technique, but I might need it in the future.
 
