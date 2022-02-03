@@ -108,5 +108,5 @@ You can try [my code](https://godbolt.org/z/dP1jzaf7T) on Compiler Explorer.
 
 I experimented with C++17 string_view. I hoped it can avoid messy template meta programming. I tested on Compiler Explorer but the function that extracts class name and function name ended up as a regular function, not an inline constexpr function. Here is the failed [code](https://godbolt.org/z/597637f6Y)
 
-By the way, I came across [this](https://davidgorski.ca/posts/truncate-string-whitespace-compiletime-cpp/) which showed how to trim whitespaces at compile-time. I did not use this technique, but I might need it in the future.
+By the way, I came across this [post](https://davidgorski.ca/posts/truncate-string-whitespace-compiletime-cpp/) showing a technique to trim whitespaces at compile-time. I did not it but it might be useful in the future.
 
